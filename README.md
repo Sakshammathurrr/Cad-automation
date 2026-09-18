@@ -65,9 +65,3 @@ Windows) or run the CAD skills under WSL, where it does not apply. The wheel
 is built by the cadquery-ocp project, so signing it is not something this
 repository can do.
 
-## 🛠️ Contributing
-
-Branch from `main` and keep work local until you choose to publish.
-For setup, skill linking, and validation guidance, see
-[SETUP.md](SETUP.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
-Upstream feature decisions live in [notes/UPSTREAM-DECISIONS.md](notes/UPSTREAM-DECISIONS.md).
