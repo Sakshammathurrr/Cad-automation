@@ -2,40 +2,8 @@
 
 <!-- demo gif omitted: LFS asset not present in this fork -->
 
-<br>
-
-<pre>
-████████╗███████╗██╗  ██╗████████╗██████╗  ██████╗ █████╗ ██████╗ 
-╚══██╔══╝██╔════╝╚██╗██╔╝╚══██╔══╝╚════██╗██╔════╝██╔══██╗██╔══██╗
-   ██║   █████╗   ╚███╔╝    ██║    █████╔╝██║     ███████║██║  ██║
-   ██║   ██╔══╝   ██╔██╗    ██║   ██╔═══╝ ██║     ██╔══██║██║  ██║
-   ██║   ███████╗██╔╝ ██╗   ██║   ███████╗╚██████╗██║  ██║██████╔╝
-   ╚═╝   ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═════╝ 
-</pre>
-
-A library of agent skills for CAD, CAE and CAM
-
-[Local setup](SETUP.md)
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](skills/cad/requirements.txt)
-[![STEP](https://img.shields.io/badge/STEP-Export-4A5568?style=for-the-badge)](skills/cad/SKILL.md)
-[![DXF](https://img.shields.io/badge/DXF-Drawings-4A5568?style=for-the-badge)](skills/dxf/SKILL.md)
-
-</div>
-
-# text-to-cad
-
-text-to-cad is a library of agent skills for generating, inspecting, sourcing,
-and handing off CAD artifacts from local project files. This sakshammathurrr
-checkout is used **locally** (editable `cadgen`, local skill links). See
-[SETUP.md](SETUP.md).
 
 
-
-## 🧰 Skills
-
-### Supported for saksham (default)
 
 Install locally with
 [`scripts/install/install-skills-saksham.sh`](scripts/install/install-skills-saksham.sh)
