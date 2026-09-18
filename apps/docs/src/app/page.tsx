@@ -4,25 +4,25 @@ import { HeroSection } from "@/components/hero-section";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
-const skillsInstallCommand = "npx skills add sakshammathurrr/burnsmcd";
+const skillsInstallCommand = "npx skills add Sakshammathurrr/Cad-automation";
 
 const pluginInstallCommands = [
   {
     agent: "Codex",
     command:
-      "codex plugin marketplace add sakshammathurrr/burnsmcd\ncodex plugin add cad@text-to-cad",
+      "codex plugin marketplace add Sakshammathurrr/Cad-automation\ncodex plugin add cad@text-to-cad",
   },
   {
     agent: "Claude Code",
     command:
-      "claude plugin marketplace add sakshammathurrr/burnsmcd\nclaude plugin install cad@text-to-cad",
+      "claude plugin marketplace add Sakshammathurrr/Cad-automation\nclaude plugin install cad@text-to-cad",
   },
   // Grok Build reads the same .claude-plugin/marketplace.json as Claude Code -- there is no
   // separate Grok manifest -- and installs straight from the repo rather than adding a
   // marketplace first, so it is one command, not two.
   {
     agent: "Grok Build",
-    command: "grok plugin install sakshammathurrr/burnsmcd --trust",
+    command: "grok plugin install Sakshammathurrr/Cad-automation --trust",
   },
 ];
 
@@ -178,7 +178,7 @@ function SkillLink({ skill }: { skill: (typeof skillGroups)[number] }) {
   return (
     <a
       className="inline-flex min-w-0 items-center gap-1.5 text-label uppercase tracking-[1.5px] text-primary transition hover:text-primary/80"
-      href={`https://github.com/sakshammathurrr/burnsmcd/blob/main/${skill.path}/SKILL.md`}
+      href={`https://github.com/Sakshammathurrr/Cad-automation/blob/main/${skill.path}/SKILL.md`}
       target="_blank"
       rel="noreferrer"
     >
@@ -290,7 +290,7 @@ export default function Home() {
                 Local development symlink guidance lives in{" "}
                 <a
                   className="inline-flex items-center gap-1 text-primary transition hover:text-primary/80"
-                  href="https://github.com/sakshammathurrr/burnsmcd/blob/main/CONTRIBUTING.md"
+                  href="https://github.com/Sakshammathurrr/Cad-automation/blob/main/CONTRIBUTING.md"
                   rel="noreferrer"
                   target="_blank"
                 >

@@ -262,7 +262,7 @@ with sync_playwright() as playwright:
         page = browser.new_page(viewport={"width": 1000, "height": 720})
         # The startup update check must not depend on GitHub or its rate limit.
         page.route(
-            "https://api.github.com/repos/sakshammathurrr/burnsmcd/releases/latest",
+            "https://api.github.com/repos/Sakshammathurrr/Cad-automation/releases/latest",
             lambda route: route.fulfill(json={"tag_name": f"v{sys.argv[2]}"}),
         )
         page.on("response", lambda response: responses.append(response))

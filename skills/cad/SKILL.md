@@ -5,7 +5,7 @@ description: Create/edit parametric CAD models, organize CAD projects, export ST
 
 # CAD modeling and inspection
 
-Provenance: maintained in [sakshammathurrr/burnsmcd](https://github.com/sakshammathurrr/burnsmcd).
+Provenance: maintained in [Sakshammathurrr/Cad-automation](https://github.com/Sakshammathurrr/Cad-automation).
 Use the installed local skill files for the current interface.
 
 ## Start with the task

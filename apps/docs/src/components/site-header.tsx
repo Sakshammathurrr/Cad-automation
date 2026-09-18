@@ -2,7 +2,7 @@ import { SiteHeaderClient } from "@/components/site-header-client";
 import packageJson from "../../package.json";
 
 const GITHUB_REPO_API_URL =
-  "https://api.github.com/repos/sakshammathurrr/burnsmcd";
+  "https://api.github.com/repos/Sakshammathurrr/Cad-automation";
 const DEFAULT_DISCORD_URL = "";
 
 function normalizeDiscordUrl(value: string | undefined) {

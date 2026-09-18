@@ -103,7 +103,7 @@ The repository's self-contained browser gate loads generated test inputs for eve
 format and asserts non-empty model bounds, real-framebuffer foreground coverage, toolbar
 and context-menu capabilities, and no page errors. It uses Metal on macOS and SwiftShader
 on Linux. See the
-[repository contribution guide](https://github.com/sakshammathurrr/burnsmcd/blob/main/CONTRIBUTING.md#viewer-development-in-this-repo)
+[repository contribution guide](https://github.com/Sakshammathurrr/Cad-automation/blob/main/CONTRIBUTING.md#viewer-development-in-this-repo)
 for the command.
 
 ## Known non-uniformities

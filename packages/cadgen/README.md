@@ -329,6 +329,6 @@ validate · snapshot; `srdf` validate. `cadgen snapshot` routes any suffix.
 outside the mirror pattern. `cadgen step compile` is internal tooling: skills never
 teach it — doors compile a document's missing tree on demand.
 
-Developed in [sakshammathurrr/burnsmcd](https://github.com/sakshammathurrr/burnsmcd);
+Developed in [Sakshammathurrr/Cad-automation](https://github.com/Sakshammathurrr/Cad-automation);
 that repo's contributor guide carries the development workflow (tests,
 bundling, versioning).

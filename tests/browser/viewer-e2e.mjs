@@ -44,7 +44,7 @@ const fixtures = [
 const expectedBounds = { min: [39, -3, -5], max: [45, 3, 9] };
 const viewport = { width: 1400, height: 900 };
 const viewerOrigin = args.url ? new URL(args.url).origin : "";
-const latestReleaseApiUrl = "https://api.github.com/repos/sakshammathurrr/burnsmcd/releases/latest";
+const latestReleaseApiUrl = "https://api.github.com/repos/Sakshammathurrr/Cad-automation/releases/latest";
 const currentVersion = fs.readFileSync(path.join(REPO, "VERSION"), "utf8").trim();
 const failures = [];
 const results = [];
@@ -80,7 +80,7 @@ async function newPage({ lod = true } = {}) {
         contentType: "application/json",
         body: JSON.stringify({
           tag_name: `v${currentVersion}`,
-          html_url: `https://github.com/sakshammathurrr/burnsmcd/releases/tag/v${currentVersion}`,
+          html_url: `https://github.com/Sakshammathurrr/Cad-automation/releases/tag/v${currentVersion}`,
           body: "",
         }),
       });

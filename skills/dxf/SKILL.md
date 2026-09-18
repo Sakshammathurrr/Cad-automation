@@ -5,7 +5,7 @@ description: Generate, regenerate, and validate 2D DXF drawings from Python buil
 
 # DXF generation and validation
 
-Provenance: maintained in [sakshammathurrr/burnsmcd](https://github.com/sakshammathurrr/burnsmcd).
+Provenance: maintained in [Sakshammathurrr/Cad-automation](https://github.com/Sakshammathurrr/Cad-automation).
 Use the installed local skill files as the runtime source of truth; the
 repository link is only for provenance and release review.
 

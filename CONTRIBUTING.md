@@ -13,7 +13,7 @@ fixture/artifact area.
 Maintainers with write access can clone the upstream repository directly:
 
 ```bash
-git clone https://github.com/sakshammathurrr/burnsmcd.git
+git clone https://github.com/Sakshammathurrr/Cad-automation.git
 cd text-to-cad
 git switch -c my-change
 ```
@@ -24,13 +24,13 @@ fork as `origin` and the canonical repository as `upstream`:
 ```bash
 git clone https://github.com/<username>/text-to-cad.git
 cd text-to-cad
-git remote add upstream https://github.com/sakshammathurrr/burnsmcd.git
+git remote add upstream https://github.com/Sakshammathurrr/Cad-automation.git
 git fetch upstream main
 git switch -c my-change upstream/main
 ```
 
 Push the branch to `origin` and open the pull request against
-`sakshammathurrr/burnsmcd:main`.
+`Sakshammathurrr/Cad-automation:main`.
 
 ### Development environment
 
@@ -702,8 +702,8 @@ done on 2026-09-04; `develop`'s protection is still in place until step 5.
 1. Record the current rules (read-only):
    ```bash
    gh repo view --json defaultBranchRef --jq .defaultBranchRef.name     # main
-   gh api repos/sakshammathurrr/burnsmcd/branches/develop/protection
-   gh api repos/sakshammathurrr/burnsmcd/rulesets
+   gh api repos/Sakshammathurrr/Cad-automation/branches/develop/protection
+   gh api repos/Sakshammathurrr/Cad-automation/rulesets
    ```
 2. Retire the `main publish only` ruleset (it blocked updates, deletions and
    non-fast-forward pushes and required linear history, which would refuse
@@ -714,7 +714,7 @@ done on 2026-09-04; `develop`'s protection is still in place until step 5.
 4. Protect `main` the way `develop` was protected (done; the classic
    branch-protection API):
    ```bash
-   gh api --method PUT repos/sakshammathurrr/burnsmcd/branches/main/protection \
+   gh api --method PUT repos/Sakshammathurrr/Cad-automation/branches/main/protection \
      --input - <<'JSON'
    {"required_status_checks":{"strict":true,"contexts":["Version Check","cadgen (Linux)","cadgen (Windows)","cadgen-js","viewer","skills","docs","packaging"]},
     "enforce_admins":false,
@@ -724,7 +724,7 @@ done on 2026-09-04; `develop`'s protection is still in place until step 5.
    ```
 5. Delete the retired branches once nothing references them:
    ```bash
-   gh api --method DELETE repos/sakshammathurrr/burnsmcd/branches/develop/protection
+   gh api --method DELETE repos/Sakshammathurrr/Cad-automation/branches/develop/protection
    git push origin --delete develop release/0.5.0
    git branch -r | sed -n 's#^ *origin/\(release/.*\)#\1#p' | xargs -n1 git push origin --delete
    ```
@@ -737,7 +737,7 @@ done on 2026-09-04; `develop`'s protection is still in place until step 5.
 8. Re-point PyPI trusted publishing at the new workflow file. A trusted
    publisher is bound to the workflow FILENAME, and the upload used to run from
    `release.yml`; it now runs from `release-publish.yml`. On pypi.org → project
-   `cadgen` → Publishing, add a publisher for `sakshammathurrr/burnsmcd`,
+   `cadgen` → Publishing, add a publisher for `Sakshammathurrr/Cad-automation`,
    workflow `release-publish.yml` (no environment), then remove the
    `release.yml` one. Skipping this makes the first real upload fail with an
    OIDC "invalid publisher" error after every other gate has passed; the

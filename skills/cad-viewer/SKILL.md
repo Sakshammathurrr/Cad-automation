@@ -5,7 +5,7 @@ description: Start CAD Viewer and return review links for CAD and robot-descript
 
 # CAD Viewer
 
-Provenance: maintained in [sakshammathurrr/burnsmcd](https://github.com/sakshammathurrr/burnsmcd).
+Provenance: maintained in [Sakshammathurrr/Cad-automation](https://github.com/Sakshammathurrr/Cad-automation).
 Use the installed local skill files as the runtime source of truth; the
 repository link is only for provenance and release review. If the user asks to
 modify, debug, or iterate on CAD Viewer source itself, that is the repository's

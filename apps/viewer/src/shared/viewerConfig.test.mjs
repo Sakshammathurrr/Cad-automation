@@ -164,15 +164,15 @@ test("a patch release is worth prompting about, at this cadence", () => {
 test("normalizeViewerSkillsInstallCommand accepts skills add/install and nothing chained on", () => {
   // A shell prompt and padding are stripped, so a command pasted out of a release body works.
   assert.equal(
-    normalizeViewerSkillsInstallCommand("$ npx   skills add   sakshammathurrr/burnsmcd"),
-    "npx skills add sakshammathurrr/burnsmcd"
+    normalizeViewerSkillsInstallCommand("$ npx   skills add   Sakshammathurrr/Cad-automation"),
+    "npx skills add Sakshammathurrr/Cad-automation"
   );
   // The default is skills-only: the skills tell the agent when and how to install cadgen.
   assert.equal(
     normalizeViewerSkillsInstallCommand(DEFAULT_VIEWER_SKILLS_INSTALL_COMMAND),
     DEFAULT_VIEWER_SKILLS_INSTALL_COMMAND
   );
-  assert.equal(DEFAULT_VIEWER_SKILLS_INSTALL_COMMAND, "npx skills add sakshammathurrr/burnsmcd");
+  assert.equal(DEFAULT_VIEWER_SKILLS_INSTALL_COMMAND, "npx skills add Sakshammathurrr/Cad-automation");
   // Nothing may be chained on -- not even a pip install. This string is put in front of the
   // user to run, so a release body cannot smuggle a second command through it.
   assert.equal(
@@ -186,8 +186,8 @@ test("normalizeViewerSkillsInstallCommand accepts skills add/install and nothing
   // `install` is an undocumented alias for `add`, and older release bodies use it, so it stays
   // acceptable rather than being rewritten into the fallback.
   assert.equal(
-    normalizeViewerSkillsInstallCommand("npx skills install sakshammathurrr/burnsmcd"),
-    "npx skills install sakshammathurrr/burnsmcd"
+    normalizeViewerSkillsInstallCommand("npx skills install Sakshammathurrr/Cad-automation"),
+    "npx skills install Sakshammathurrr/Cad-automation"
   );
   assert.equal(
     normalizeViewerSkillsInstallCommand("npx skills add example/repo --channel beta"),
@@ -243,10 +243,10 @@ test("the agent update prompt names the skills command alone, in one short line"
 });
 
 test("normalizeViewerSkillsUpdatePrompt rejects a prompt with no command in it", () => {
-  const custom = "Run `npx skills add sakshammathurrr/burnsmcd` for me.";
+  const custom = "Run `npx skills add Sakshammathurrr/Cad-automation` for me.";
   assert.equal(normalizeViewerSkillsUpdatePrompt(custom), custom);
   // The `install` spelling is an accepted alias, so an older prompt still passes through.
-  const legacy = "Run `npx skills install sakshammathurrr/burnsmcd`.";
+  const legacy = "Run `npx skills install Sakshammathurrr/Cad-automation`.";
   assert.equal(normalizeViewerSkillsUpdatePrompt(legacy), legacy);
   // Prose with no command leaves the agent guessing at a channel: fall back instead.
   assert.equal(

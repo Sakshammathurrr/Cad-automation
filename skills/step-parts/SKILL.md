@@ -5,7 +5,7 @@ description: Find, evaluate, and download common purchasable CAD parts from step
 
 # STEP Parts
 
-Provenance: maintained in [sakshammathurrr/burnsmcd](https://github.com/sakshammathurrr/burnsmcd).
+Provenance: maintained in [Sakshammathurrr/Cad-automation](https://github.com/Sakshammathurrr/Cad-automation).
 Use the installed local skill files as the runtime source of truth; the
 repository link is only for provenance and release review.
 

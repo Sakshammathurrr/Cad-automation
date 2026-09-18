@@ -64,9 +64,9 @@ dependencies = [
 snapshot = ["playwright"]
 
 [project.urls]
-Homepage = "https://github.com/sakshammathurrr/burnsmcd"
-Repository = "https://github.com/sakshammathurrr/burnsmcd"
-Issues = "https://github.com/sakshammathurrr/burnsmcd/issues"
+Homepage = "https://github.com/Sakshammathurrr/Cad-automation"
+Repository = "https://github.com/Sakshammathurrr/Cad-automation"
+Issues = "https://github.com/Sakshammathurrr/Cad-automation/issues"
 
 [project.scripts]
 cadgen = "cadgen.cli:main"
