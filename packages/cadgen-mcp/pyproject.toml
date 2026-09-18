@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cadgen-mcp"
+version = "0.1.0"
+description = "Local stdio MCP adapter over the cadgen CLI for Cursor and other agents."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+cadgen-mcp = "cadgen_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["cadgen_mcp*"]

@@ -1,0 +1,35 @@
+{
+  "name": "text-to-cad",
+  "owner": {
+    "name": "sakshammathurrr"
+  },
+  "interface": {
+    "displayName": "text-to-cad"
+  },
+  "metadata": {
+    "description": "CAD, robotics, fabrication, and local review plugins."
+  },
+  "description": "CAD, robotics, fabrication, and local review plugins.",
+  "version": "0.6.5",
+  "plugins": [
+    {
+      "name": "cad",
+      "source": "./",
+      "description": "CAD, robotics, fabrication, and local review skills.",
+      "version": "0.6.5",
+      "author": {
+        "name": "sakshammathurrr"
+      },
+      "homepage": "https://github.com/sakshammathurrr/burnsmcd",
+      "repository": "https://github.com/sakshammathurrr/burnsmcd",
+      "license": "MIT",
+      "category": "productivity",
+      "tags": [
+        "cad",
+        "robotics",
+        "fabrication",
+        "skills"
+      ]
+    }
+  ]
+}

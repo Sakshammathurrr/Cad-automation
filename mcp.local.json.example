@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "cadgen": {
+      "command": "REPLACE_WITH_REPO_ROOT\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "cadgen_mcp"],
+      "env": {}
+    }
+  }
+}
